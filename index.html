@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/desktop.css" />    
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="board">      
+        <div class="field flexreverse"  id="f1"></div>
+        <div class="field flexreverse"  id="f2"></div>
+        <div class="field flexreverse"  id="f3"></div>
+        <div class="field flexreverse"  id="f4"></div> 
+        <div class="field flexreverse"  id="f5"></div> 
+        <div class="field flexreverse"  id="f6"></div>
+        <div class="field flexreverse"  id="f7"></div>
+        <div class="field flexreverse"  id="f8"></div>
+        <div class="field flexreverse"  id="f9"></div>
+        <div class="field flexreverse"  id="f10"></div>
+        <div class="field flexreverse"  id="f11"></div>
+        <div class="field flexreverse"  id="f12"></div>
+        <div class="field"  id="f13"></div>
+        <div class="field"  id="f14"></div>
+        <div class="field"  id="f15"></div>
+        <div class="field"  id="f16"></div> 
+        <div class="field"  id="f17"></div> 
+        <div class="field"  id="f18"></div>
+        <div class="field"  id="f19"></div>
+        <div class="field"  id="f20"></div>
+        <div class="field"  id="f21"></div>
+        <div class="field"  id="f22"></div> 
+        <div class="field"  id="f23"></div> 
+        <div class="field"  id="f24"></div>
+        <div class="field" id="f25"></div> 
+        <div class="field" id="f26"></div>
+        <div class="field" id="topRight"></div>
+        <div class="field" id="bottomRight"></div>
+<!-- DICE DISPLAY -->
+      <img class="dice player1 movesPlayer1" id="dice1" src="assets/diceR1.svg"> 
+      <img class="dice player1 movesPlayer1" id="dice2" src="assets/diceR1.svg"> 
+      <img class="dice player2 movesPlayer2" id="dice3" src="assets/diceB1.svg"> 
+      <img class="dice player2 movesPlayer2" id="dice4" src="assets/diceB1.svg"> 
+        <fieldset class="player1" id="player1Moves">
+          <legend>PLAYER RED MOVES</legend>
+        </fieldset>
+      </form>
+      
+      <form>
+        <fieldset class="player2" id="player2Moves">
+          <legend>PLAYER BLACK MOVES</legend>
+          
+        </fieldset>
+      </form>
+      
+      
+<!-- PLAYERS BUTTONS DISPLAY -->
+    <button class="button player1" id="rollPlayer1" onclick="rollPlayer1Click()">PLAYER1 ROLL</button>
+    <button class="button player2" id="rollPlayer2" onclick="rollPlayer2Click()">PLAYER2 ROLL</button>
+    <button class="button movesPlayer1" id="player1Move1" onclick="player1Move(this.innerHTML,this.id)">1</button>
+    <button class="button movesPlayer1" id="player1Move2" onclick="player1Move(this.innerHTML,this.id)">1</button>
+    <button class="button movesPlayer1" id="player1Move3" onclick="player1Move(this.innerHTML,this.id)">1</button>
+    <button class="button movesPlayer1" id="player1Move4" onclick="player1Move(this.innerHTML,this.id)">1</button>
+    <button class="button movesPlayer2" id="player2Move1" onclick="player2Move(this.innerHTML,this.id)">1</button>
+    <button class="button movesPlayer2" id="player2Move2" onclick="player2Move(this.innerHTML,this.id)">1</button>
+    <button class="button movesPlayer2" id="player2Move3" onclick="player2Move(this.innerHTML,this.id)">1</button>
+    <button class="button movesPlayer2" id="player2Move4" onclick="player2Move(this.innerHTML,this.id)">1</button>
+    <div id="message">FIRST TURN: BOTH PLAYERS MUST ROLL</div>
+    <button class="firstRoll" onclick="firstPlayerRollStart()" id="message2">RED ROLL</button> 
+    <button class="firstRoll" onclick="secondPlayerRollStart()"id="message3">BLACK ROLL </button> 
+    <button class="firstRoll" onclick="okClick()" id="message4">OK</button>
+    </div> 
+    <script type="application/javascript" src="scripts/script1.js"></script> 
+    <script type="application/javascript" src="scripts/jquery-3.5.1.js"></script> 
+  </body>
+</html>
